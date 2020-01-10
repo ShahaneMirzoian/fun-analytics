@@ -18,11 +18,11 @@ Rserve()`
 
 Что в них происходит? 
 Первые 2 строчки скачивают и импортят библиотеку Rserve, третья запускает функцию оттуда. Давайте посмотрим, что это за библиотека: 
-`help(Rserve)
->Server providing R functionality to applications via TCP/IP or local unix sockets`
+`help(Rserve)`
+>Server providing R functionality to applications via TCP/IP or local unix sockets
 
 Мы локально запустили сервер с R, к которому может обращаться наше табло. То есть табло не "на месте" подсчитывает данные, а стучится в R с со всеми переданными параметрами и записывает в переменную результат выполнения.
 
 Чтобы это все взлетело, остался последний штрих - нужно показать табло, куда стучаться. 
 Локально делается так: `Help->Setting and Performance -> Manage External Service Connection`
-Выбираем localhost, проверяем подключение, взлетаем 
+Выбираем `localhost`, проверяем подключение, взлетаем 
